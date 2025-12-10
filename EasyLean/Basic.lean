@@ -8,5 +8,4 @@ theorem mathd_algebra_513
   a = 1 ∧ b = 1 := by
   sorry
 
-theorem eq_four : ∀ a b c d : Nat, a = b → a = d → a = c → c = b := by
-  sorry
+-- This verision is in branch
