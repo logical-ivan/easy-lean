@@ -1,0 +1,11 @@
+import Mathlib
+
+theorem mathd_algebra_513
+    (a b : ℝ) (h₀ : 3 * a + 2 * b = 5) (h₁ : a + b = 2) :
+    a = 1 ∧ b = 1 := by
+  have hb : b = 1 := by
+    linarith [h₀, h₁]
+  have ha : a = 1 := by
+    linarith [h₁, hb]
+  exact ⟨ha, hb⟩
+
