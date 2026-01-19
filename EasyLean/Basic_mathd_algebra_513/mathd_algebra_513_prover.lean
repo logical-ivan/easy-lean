@@ -1,0 +1,18 @@
+import Mathlib
+import Mathlib.Data.Real.Basic
+import Mathlib.Tactic.Linarith
+
+theorem eq_four (a b c d : ℕ) : a = b → a = d → a = c → c = b := by
+  intro hab had hac
+  exact hac.symm.trans hab
+
+
+theorem mathd_algebra_513 (a b : ℝ)
+  (h₀ : 3 * a + 2 * b = 5)
+  (h₁ : a + b = 2) :
+  a = 1 ∧ b = 1 := by
+  constructor
+  · linarith [h₀, h₁]
+  · linarith [h₀, h₁]
+
+
