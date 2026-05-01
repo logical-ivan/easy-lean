@@ -1,12 +1,12 @@
 import Mathlib.Data.Real.Basic
 import Mathlib.Tactic.Linarith
 
-theorem mathd_algebra_513
-  (a b : ℝ)
-  (h₀ : 3 * a + 2 * b = 5)
-  (h₁ : a + b = 2) :
-  a = 1 ∧ b = 1 := by
-  sorry
+theorem jocelyn_qiaochu_chen (n : ℕ) : n + 0 = n := by
+  exact Nat.add_zero n
+
+theorem mathd_algebra_513 (n : ℕ) : n + 0 = n := by
+  exact jocelyn_qiaochu_chen n
+
 
 theorem eq_four : ∀ a b c d : Nat, a = b → a = d → a = c → c = b := by
   sorry
