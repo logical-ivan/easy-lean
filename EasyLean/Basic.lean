@@ -9,4 +9,5 @@ theorem mathd_algebra_513
   sorry
 
 theorem eq_four : ∀ a b c d : Nat, a = b → a = d → a = c → c = b := by
-  sorry
+  intro a b c d hab had hac
+  exact hac.symm.trans hab
